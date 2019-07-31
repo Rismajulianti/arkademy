@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ponsel</title>
+   <center> <h1>Spesifikasi Ponsel 2019</h1></center>
+   <img src="IMG_20190730_231215.jpg">
+   <img src="IMG_20190730_231301.jpg">
+   <img src="IMG_20190730_231148.jpg">
+   <img src="IMG_20190730_231240.jpg">
+    <style>
+        img{
+            width:150px;
+            height:50px;
+            padding:20px;
+            margin:20;
+            border-radius:20px;
+        }
+        h1{
+            padding: 20px;
+            margin:40px;
+            background-color: brown;
+            color:cornsilk;
+            border-radius: 200px;
+        }
+        body{
+            margin: 0 auto;
+            font-family:Arial, Helvetica, sans-serif;
+            background-color:cornflowerblue;
+        }
+        #ponsel{
+            background-color: pink;
+            width: 500px;
+            margin:0 auto;
+            padding:10px;
+            border-radius: 20px;
+        }
+        #ponsel div{
+            padding:15px;
+            border: 1px solid black;
+            border-radius:10px;
+        }
+        #ponsel div .nama-ponsel::before{
+            padding: 5px;
+            margin: 5px;
+            color:black;
+            content: "nama:"
+        
+        }
+        #ponsel div .nama-ponsel{
+            display:block;
+            color: blue;
+        }
+        #ponsel div .harga-ponsel::before{  
+             padding: 5px;
+            margin: 5px;
+            color: blue;
+            content: "harga:";
+        }
+        #ponsel div .ram-ponsel::before{
+            padding: 5px;
+            margin: 5px;
+            color: red;
+            content: "ram:";
+        }
+        #ponsel div .ram-ponsel{
+            display:block;
+            color:chocolate;
+        }
+        #ponsel div .storage-ponsel{
+            display:block;
+            color:darkviolet;
+        }
+        #ponsel div .storage-ponsel::before{
+            margin: 5px;
+            padding:5px;
+            content: "storage:"
+        }
+    </style>
+</head>
+<body>
+    <div id="ponsel"></div>
+    <script src="ponsel.js"></script>
+</body>
+</html>
