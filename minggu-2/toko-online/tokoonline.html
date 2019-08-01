@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Toko Online Kerudung</title>
+    <center><h1>BAROKATISHOP KERUDUNG PASMINAH </h1></center>
+    <img src="logo_salah_4%20(1).png" height="70px" width="200px;">
+    <style>
+      body{
+            background-color: rgb(194, 72, 93);
+        padding:20px;
+        margin:20px;
+        background-image: url("");
+        flex-direction: column;
+      }
+      h1{
+        border-radius:50px;
+        padding:10px;
+        margin:30px;
+        background-color:rgb(43, 24, 1);
+        color:rgb(244, 247, 247);
+      }
+     
+        #item-list{
+            display:flex;
+            flex-wrap:wrap;
+        }
+        .item{
+            flex:1;
+            background-color: burlywood	;
+            margin: 25px;
+            text-align: center;
+            padding:5px;
+            border-radius:15px;
+        }
+        .item .gambar img{
+            width: 170px;
+            height:130px;
+            margin:5px;
+            border-radius:15px;
+        }
+        .pemisah{
+          font-display:initial;
+            
+        }
+        .nama{
+          color: Maroon	;
+        }
+        .ukuran{
+          color:rgb(10, 10, 10);
+        }
+        .warna{
+          color: purple;
+        }
+        .item:hover{
+          background-color: rgb(115, 115, 204);
+        }
+    </style>
+</head>
+<body>
+    <div id="item-list"></div>
+    <script>
+        let item =
+            [
+      {
+        "nama":"pasminah diamond",
+        "gambar":"cream.jpg",
+        "ukuran":"150cm x 150cm",
+        "warna":"cream",
+        "harga":"Rp.35.000"
+      },
+      {
+        "nama":"pasminah diamond",
+        "gambar":"pasminah%20300x300.jpg",
+        "ukuran":"300cm x 300cm",
+        "warna":"hitam",
+        "harga":"Rp.30.000"
+      },
+      {
+        "nama":"pasminah diamond",
+        "gambar":"green%20army.jpg",
+        "ukuran":"75cm x 175cm",
+        "warna":"greenarmy",
+        "harga":"Rp.30.000"
+      },
+      {
+        "nama":"pasminah diamond",
+        "gambar":"silver.jpg",
+        "ukuran":"640cm x 640cm",
+        "warna":"silver",
+        "harga":"Rp.40.000"
+      },
+      {
+        "nama":"pasminah diamond ",
+        "gambar":"biru%20navy.jpeg",
+        "ukuran":"150cm x 150cm",
+        "warna":"milo",
+        "harga":"Rp.30.000"
+      },
+      {
+        "nama":"pasminah diamond",
+        "gambar":"merah.jpg",
+        "ukuran":"380cm x 380cm",
+        "warna":"merah",
+        "harga":"Rp.35.000"
+      },
+      {
+        "nama":"pasminah diamond",
+        "gambar":"dusty-pink_full02.jpg",
+        "ukuran":"380cm x 380cm",
+        "warna":"dustypink",
+        "harga":"Rp.30.000"
+      },
+      {
+        "nama":"pasminah",
+        "gambar":"abu-abu_full02.jpg",
+        "ukuran":"380cm x 380cm",
+        "warna":"abu abu",
+        "harga":"Rp.30.000"
+      },
+      {
+        "nama":"pasminah diamond",
+        "gambar":"maroon.jpeg",
+        "ukuran":"170cm x 170cm",
+        "warna":"maroon",
+        "harga":"Rp.30.000"
+      },
+      {
+        "nama":"pasminah diamond",
+        "gambar":"navy.jpeg",
+        "ukuran":"170cm x 150cm",
+        "warna":"navy",
+        "harga":"Rp.30.000"
+      },
+      {
+        "nama":"pasminah diamond",
+        "gambar":"pink%20rose.jpeg",
+        "ukuran":"170cm x 170cm",
+        "warna":"pink rose",
+        "harga":"Rp.30.000"
+      },
+      {
+        "nama":"pasminah diamond",
+        "gambar":"purple.jpeg",
+        "ukuran":"170cm x 170cm",
+        "warna":"purpel",
+        "harga":"Rp.30.000"
+      },
+      {
+        "nama":"pasminah diamond",
+        "gambar":"salem.jpeg",
+        "ukuran":"170cm x 170cm",
+        "warna":"salem",
+        "harga":"Rp.30.000"
+      },
+      {
+        "nama":"pasminah diamond",
+        "gambar":"green.jpeg",
+        "ukuran":"170cm x 170cm",
+        "warna":"green",
+        "harga":"Rp.30.000"
+      },
+      {
+        "nama":"pasminah diamond",
+        "gambar":"cappucino.jpeg",
+        "ukuran":"170cm x 170cm",
+        "warna":"cappucino",
+        "harga":"Rp.30.000"
+      },
+      {
+        "nama":"pasminah diamond",
+        "gambar":"silver.jpeg",
+        "ukuran":"170cm x 170cm",
+        "warna":"silver",
+        "harga":"Rp.30.000"
+      },
+      {
+        "nama":"pasminah diamond",
+        "gambar":"milo%20(2).jpeg",
+        "ukuran":"170cm x 170cm",
+        "warna":"milo tua",
+        "harga":"Rp.30.000"
+      },
+      {
+        "nama":"pasminah diamond",
+        "gambar":"cream.jpg",
+        "ukuran":"150cm x 150cm",
+        "warna":"cream",
+        "harga":"Rp.35.000"
+      },
+      {
+        "nama":"pasminah diamond",
+        "gambar":"cream.jpg",
+        "ukuran":"150cm x 150cm",
+        "warna":"cream",
+        "harga":"Rp.35.000"
+      },
+      {
+        "nama":"pasminah diamond",
+        "gambar":"cream.jpg",
+        "ukuran":"150cm x 150cm",
+        "warna":"cream",
+        "harga":"Rp.35.000"
+      },
+
+
+    ];
+    for(x in item){
+        var namaitem = item[x].nama;
+        var gambaritem =item[x].gambar;
+        let ukuranitem =item[x].ukuran;
+        let warnaitem =item[x].warna;
+        let hargaitem =item[x].harga;
+
+        document.getElementById('item-list').innerHTML+="\
+        <div class='item'>\
+            <br><div class='gambar'><img src='"+gambaritem+"' alt=''/><div>\
+                <div  class='nama'>"+namaitem+"</div><br>\
+                <div  class='ukuran'>"+ukuranitem+"</div>\
+                <div  class='warna'>"+warnaitem+"</div>\
+                <div  class='harga'>"+hargaitem+"</div>\
+                </div>\
+                ";
+                if(((x+1)/5)===0){
+                    document.getElementById('item-list').innerHTML+="\
+                    <div class='pemisah'></div>\
+                    ";
+                }
+    }
+    </script>
+    
+</body>
+</html>
